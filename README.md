@@ -4,7 +4,7 @@ This is the .NET Core version of the classic Articulate app.  It does not at thi
 
 To deploy this app, you will need the dotnet core package installed.  You can find the latest version at Microosft's site: https://www.microsoft.com/net/download
 
-#Deploying the App
+*Deploying the App*
 
 1.  Navigate to the folder where you have saved these files
 
@@ -12,6 +12,6 @@ To deploy this app, you will need the dotnet core package installed.  You can fi
 
 3.  Type: cf push articulate-dot-net -p .\publish . to push up to PAS.  Note that PAS will automatically find the right buildpack
 
-#Differences
+*Differences from Linux Version*
 Note that this version does not have a separate Attendee-Service or connection to database service.  There are a couple other options for this functionality.  There is local persistence on the app instances themselves.  So you can store different data on different instances (assuming you have multiple instances and you refresh).  I use this as an example of why data _should_ be separated.
 
